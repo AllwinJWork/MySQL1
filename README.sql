@@ -43,5 +43,7 @@ order by name ASC;
  -- Question 14
  SELECT AVG(length) FROM `sakila`.`film`;
  -- Question15
-SELECT AVG(length), `rating` FROM `sakila`.`film` GROUP BY `rating`;
+ SELECT AVG(length), `rating` FROM `sakila`.`film` GROUP BY `rating`;
  -- Question16
+ SELECT COUNT(`description`) FROM `sakila`. `film` 
+ WHERE `description` LIKE '%robot%';
