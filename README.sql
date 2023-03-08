@@ -34,3 +34,14 @@ Select distinct country from sakila.country;
 -- Question 12
 select * from sakila.language
 order by name ASC;
+-- Question13
+ SELECT `actor_id`, COUNT(*)
+ FROM `sakila`.`actor_info`
+ GROUP BY `actor_id`
+ ORDER BY COUNT(*) DESC;
+ SELECT*FROM `sakila`. `actor` WHERE `actor_id` =107;
+ -- Question 14
+ SELECT AVG(length) FROM `sakila`.`film`;
+ -- Question15
+SELECT AVG(length), `rating` FROM `sakila`.`film` GROUP BY `rating`;
+ -- Question16
