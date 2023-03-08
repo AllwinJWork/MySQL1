@@ -47,3 +47,10 @@ order by name ASC;
  -- Question16
  SELECT COUNT(`description`) FROM `sakila`. `film` 
  WHERE `description` LIKE '%robot%';
+ -- Qeustion18
+ SELECT*FROM film
+ WHERE YEAR(release_year)=2010;
+ -- Question19
+ SELECT `last_name`, COUNT(`last_name`) AS `actors_num`
+ FROM `sakila`.`actor`
+ GROUP BY `last_name`;
